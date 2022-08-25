@@ -13,13 +13,10 @@ export default {
             }
         }
     },
-    styleResources: {
-        sass: [
-            './assets/sass/style-resources/_custom.sass',
-            './assets/sass/style-resources/_bootstrap.sass',
-        ],
-    },
     css: [
-        './assets/sass/style.sass',
-    ]
+        '@/assets/scss/main.scss'
+    ],
+    plugins: [
+        {src: '~/plugins/bootstrap.js', mode: 'client'}
+    ],
 }
